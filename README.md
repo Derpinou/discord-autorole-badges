@@ -1,7 +1,7 @@
 # Discord AutoRole Badges
 
-[![downloadsBadge](https://img.shields.io/npm/dt/discord-reaction-role?style=for-the-badge)](https://npmjs.com/discord-autorole-badges)
-[![versionBadge](https://img.shields.io/npm/v/discord-reaction-role?style=for-the-badge)](https://npmjs.com/discord-autorole-badges)
+[![downloadsBadge](https://img.shields.io/npm/dt/discord-autorole-badges?style=for-the-badge)](https://npmjs.com/discord-autorole-badges)
+[![versionBadge](https://img.shields.io/npm/v/discord-autorole-badges?style=for-the-badge)](https://npmjs.com/discord-autorole-badges)
 
 Discord AutoRole Badges is a powerful [Node.js](https://nodejs.org) module that allows you to easily give badges roles when new member join a server
 

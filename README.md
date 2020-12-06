@@ -14,13 +14,13 @@ npm i discord-autorole-badges
 ## Exemple
 If you want add specified roles in specified guild:
 ```js
-const {Manager} = require('./index'),
+const {Manager} = require('discord-autorole-badges'),
     {Client} = require('discord.js'),
     client = new Client();
 
 client.login("token")
 
-new Manager(client, true, {
+new Manager(client, {
         DISCORD_PARTNER: "xxxxxxxxxxxxxxxxxx",
         HYPESQUAD_EVENTS: "xxxxxxxxxxxxxxxxxx",
         BUGHUNTER_LEVEL_1: "xxxxxxxxxxxxxxxxxx",
@@ -34,7 +34,7 @@ new Manager(client, true, {
 ```
 Else, if you want to add badges with databases in others guilds
 ```js
-const {Manager} = require('./index'),
+const {Manager} = require('discord-autorole-badges'),
     {Client} = require('discord.js'),
     client = new Client();
 
@@ -55,7 +55,6 @@ client.on("guildMemberAdd", async (member) => {
 
 List of supported badges by the package:
 ```js
-    DISCORD_EMPLOYEE
     DISCORD_PARTNER
     HYPESQUAD_EVENTS
     BUGHUNTER_LEVEL_1
@@ -63,8 +62,6 @@ List of supported badges by the package:
     HOUSE_BRILLIANCE
     HOUSE_BALANCE
     EARLY_SUPPORTER
-    TEAM_USER
-    SYSTEM
     BUGHUNTER_LEVEL_2
     VERIFIED_BOT
     VERIFIED_DEVELOPER

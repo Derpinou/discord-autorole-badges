@@ -66,4 +66,5 @@ List of supported badges by the package:
     VERIFIED_BOT
     VERIFIED_DEVELOPER
     EARLY_VERIFIED_DEVELOPER
+    DISCORD_CERTIFIED_MODERATOR
 ```

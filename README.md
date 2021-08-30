@@ -5,66 +5,66 @@
 
 Discord AutoRole Badges is a powerful [Node.js](https://nodejs.org) module that allows you to easily give badges roles when new member join a server
 
+If you don't understand something in this page, you are experiencing problems, or you just need a gentle
+nudge in the right direction, please don't hesitate to join our official [Support Server](https://discord.gg/ncheNRHFR7)
+
+
 ## Installation
 
 ```
 npm i discord-autorole-badges
 ```
 
-## Exemple
-If you want add specified roles in specified guild:
+## Example
 ```js
-const {Manager} = require('discord-autorole-badges'),
-    {Client} = require('discord.js'),
-    client = new Client();
+const {Manager} = require('discord-autorole-badges');
+const {Client} = require('discord.js');
+const client = new Client({ intents: 32767})
 
-client.login("token")
 
-new Manager(client, {
-        DISCORD_PARTNER: "xxxxxxxxxxxxxxxxxx",
-        HYPESQUAD_EVENTS: "xxxxxxxxxxxxxxxxxx",
-        BUGHUNTER_LEVEL_1: "xxxxxxxxxxxxxxxxxx",
-        HOUSE_BRAVERY: "xxxxxxxxxxxxxxxxxx",
-        HOUSE_BRILLIANCE: "xxxxxxxxxxxxxxxxxx",
-        HOUSE_BALANCE: "xxxxxxxxxxxxxxxxxx",
-        EARLY_SUPPORTER: "xxxxxxxxxxxxxxxxxx",
-        VERIFIED_DEVELOPER: "xxxxxxxxxxxxxxxxxx",
-        EARLY_VERIFIED_DEVELOPER: "xxxxxxxxxxxxxxxxxx"
-    });
-```
-Else, if you want to add badges with databases in others guilds
-```js
-const {Manager} = require('discord-autorole-badges'),
-    {Client} = require('discord.js'),
-    client = new Client();
+let manager = new Manager(client, {
+    DISCORD_EMPLOYEE: "XXXXXX",
+    PARTNERED_SERVER_OWNER: "XXXXXX",
+    HYPESQUAD_EVENTS: "XXXXXX",
+    BUGHUNTER_LEVEL_1: "XXXXXX",
+    HOUSE_BRAVERY: "XXXXXX",
+    HOUSE_BRILLIANCE: "XXXXXX",
+    HOUSE_BALANCE: "XXXXXX",
+    EARLY_SUPPORTER: "XXXXXX",
+    TEAM_USER: "XXXXXX",
+    BUGHUNTER_LEVEL_2: "XXXXXX",
+    VERIFIED_BOT: "XXXXXX",
+    EARLY_VERIFIED_BOT_DEVELOPER: "XXXXXX",
+    DISCORD_CERTIFIED_MODERATOR: "XXXXXX",
 
-client.login("token")
-
-client.dab = new Manager();
-
-client.on("guildMemberAdd", async (member) => {
-    await client.dab.addRole(member, {
-        HYPESQUAD_EVENTS: "xxxxxxxxxxxxxxxxxx",
-        HOUSE_BRAVERY: "xxxxxxxxxxxxxxxxxx",
-        HOUSE_BRILLIANCE: "xxxxxxxxxxxxxxxxxx",
-        HOUSE_BALANCE: "xxxxxxxxxxxxxxxxxx",
-        EARLY_SUPPORTER: "xxxxxxxxxxxxxxxxxx",
-    })
 })
+client.on("guildMemberAdd", async (member) => {
+    await manager.setRole(member);
+})
+
+client.on("ready", () => {
+    console.log("ready")
+})
+
+client.login("SUPER_SECRET_TOKEN")
 ```
 
-List of supported badges by the package:
+List of supported badges by the package: 
+Links: 
+* [Discord.js Documentation](https://discord.js.org/#/docs/main/stable/class/UserFlags?scrollTo=s-FLAGS)
+* [Discord.dev](https://discord.com/developers/docs/resources/user#user-object-user-flags)
 ```js
-    DISCORD_PARTNER
+    DISCORD_EMPLOYEE
+    PARTNERED_SERVER_OWNER
     HYPESQUAD_EVENTS
     BUGHUNTER_LEVEL_1
     HOUSE_BRAVERY
     HOUSE_BRILLIANCE
     HOUSE_BALANCE
     EARLY_SUPPORTER
+    TEAM_USER
     BUGHUNTER_LEVEL_2
     VERIFIED_BOT
-    VERIFIED_DEVELOPER
-    EARLY_VERIFIED_DEVELOPER
+    EARLY_VERIFIED_BOT_DEVELOPER
     DISCORD_CERTIFIED_MODERATOR
 ```

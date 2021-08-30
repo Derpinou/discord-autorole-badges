@@ -1,35 +1,42 @@
 {
   "name": "discord-autorole-badges",
-  "version": "1.1.0",
-  "dependencies": {
-    "discord.js": "^12.5.1"
-  },
-  "description": "Give discord's badge role to new member when he join",
-  "main": "index.js",
-  "devDependencies": {},
+  "version": "2.0.0",
+  "description": "Discord.js extention library for giving roles with Discord User badges",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Derpinou/DiscordAutoRoleBadges.git"
+    "url": "git+https://github.com/Derpinou/discord-autorole-badges.git"
   },
   "keywords": [
     "discord",
+    "bot",
+    "package",
+    "npm",
+    "derp",
     "roles",
     "role",
     "badge",
     "badges",
-    "discordjs",
-    "djs",
-    "derp",
-    "framework",
-    "bot"
+    "autorole"
   ],
   "author": "https://github.com/Derpinou",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Derpinou/DiscordAutoRoleBadges/issues"
+    "url": "https://github.com/Derpinou/discord-autorole-badges/issues"
   },
-  "homepage": "https://github.com/Derpinou/DiscordAutoRoleBadges#readme"
+  "homepage": "https://github.com/Derpinou/discord-autorole-badges",
+  "devDependencies": {
+    "@types/node": "^14.0.5",
+    "@types/ws": "^7.4.7",
+    "discord.js": "^13.1.0",
+    "typescript": "^4.0.2"
+  }
 }

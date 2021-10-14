@@ -23,19 +23,19 @@ const client = new Client({ intents: 32767})
 
 
 let manager = new Manager(client, {
-    DISCORD_EMPLOYEE: "XXXXXX",
-    PARTNERED_SERVER_OWNER: "XXXXXX",
-    HYPESQUAD_EVENTS: "XXXXXX",
-    BUGHUNTER_LEVEL_1: "XXXXXX",
-    HOUSE_BRAVERY: "XXXXXX",
-    HOUSE_BRILLIANCE: "XXXXXX",
-    HOUSE_BALANCE: "XXXXXX",
-    EARLY_SUPPORTER: "XXXXXX",
-    TEAM_USER: "XXXXXX",
-    BUGHUNTER_LEVEL_2: "XXXXXX",
-    VERIFIED_BOT: "XXXXXX",
-    EARLY_VERIFIED_BOT_DEVELOPER: "XXXXXX",
-    DISCORD_CERTIFIED_MODERATOR: "XXXXXX",
+    DISCORD_EMPLOYEE: "role_id",
+    PARTNERED_SERVER_OWNER: "role_id",
+    HYPESQUAD_EVENTS: "role_id",
+    BUGHUNTER_LEVEL_1: "role_id",
+    HOUSE_BRAVERY: "role_id",
+    HOUSE_BRILLIANCE: "role_id",
+    HOUSE_BALANCE: "role_id",
+    EARLY_SUPPORTER: "role_id",
+    TEAM_USER: "role_id",
+    BUGHUNTER_LEVEL_2: "role_id",
+    VERIFIED_BOT: "role_id",
+    EARLY_VERIFIED_BOT_DEVELOPER: "role_id",
+    DISCORD_CERTIFIED_MODERATOR: "role_id",
 
 })
 client.on("guildMemberAdd", async (member) => {

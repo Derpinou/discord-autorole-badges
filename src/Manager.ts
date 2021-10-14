@@ -16,7 +16,6 @@ class Manager extends EventEmitter {
     async setRole(member: GuildMember) {
         if (member.user.flags) {
             let flags = member.user.flags.serialize();
-            console.log(flags)
             for (const [key, value] of Object.entries(flags)) {
                 // @ts-ignore
                 if (this.config[key] && value) {

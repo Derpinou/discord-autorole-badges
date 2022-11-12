@@ -12,4 +12,5 @@ export interface ManagerOptions {
     VERIFIED_BOT?: string
     EARLY_VERIFIED_BOT_DEVELOPER?: string
     DISCORD_CERTIFIED_MODERATOR?: string
+    ACTIVE_DEVELOPER?: string
 }

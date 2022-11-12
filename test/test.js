@@ -17,6 +17,7 @@ let manager = new Manager(client, {
     VERIFIED_BOT: "XXXXXX",
     EARLY_VERIFIED_BOT_DEVELOPER: "XXXXXX",
     DISCORD_CERTIFIED_MODERATOR: "XXXXXX",
+    ACTIVE_DEVELOPER: "XXXXXX",
 
 })
 client.on("guildMemberAdd", async (member) => {

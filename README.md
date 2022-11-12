@@ -36,6 +36,7 @@ let manager = new Manager(client, {
     VERIFIED_BOT: "role_id",
     EARLY_VERIFIED_BOT_DEVELOPER: "role_id",
     DISCORD_CERTIFIED_MODERATOR: "role_id",
+    ACTIVE_DEVELOPER: "role_id",
 
 })
 client.on("guildMemberAdd", async (member) => {
@@ -67,4 +68,5 @@ Links:
     VERIFIED_BOT
     EARLY_VERIFIED_BOT_DEVELOPER
     DISCORD_CERTIFIED_MODERATOR
+    ACTIVE_DEVELOPER
 ```

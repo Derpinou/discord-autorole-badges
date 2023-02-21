@@ -25,7 +25,7 @@ const client = new Client({ intents: 32767})
 let manager = new Manager(client, {
     STAFF: "role_id",
     PARTNER: "role_id",
-    HYPESQUAD_EVENTS: "role_id",
+    HYPESQUAD: "role_id",
     BUG_HUNTER_LEVEL_1: "role_id",
     HYPESQUAD_ONLINE_HOUSE_1: "role_id",
     HYPESQUAD_ONLINE_HOUSE_2: "role_id",
@@ -57,7 +57,7 @@ Links:
 ```js
     STAFF
     PARTNER
-    HYPESQUAD_EVENTS
+    HYPESQUAD
     BUG_HUNTER_LEVEL_1
     HYPESQUAD_ONLINE_HOUSE_1
     HYPESQUAD_ONLINE_HOUSE_2
